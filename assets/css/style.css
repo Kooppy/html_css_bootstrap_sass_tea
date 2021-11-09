@@ -1,7 +1,8 @@
+@charset "UTF-8";
 /************************************* */
 /**************INITIALIZER************ */
 /************************************* */
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: "Lato", "Arial", sans-serif;
   letter-spacing: -1px;
   text-transform: uppercase;
@@ -36,6 +37,31 @@ img {
   width: 100%;
   height: auto; }
 
+ul {
+  list-style: none;
+  padding-inline-start: 0px; }
+
+.bg-rgba-gradient-basic {
+  background: linear-gradient(to bottom right, rgba(153, 255, 153, 0.5), rgba(153, 51, 255, 0.6)); }
+
+.bg-rgba-gradient-purple-light {
+  background: rgba(153, 51, 255, 0.6); }
+
+.bg-rgba-gradient-light-basic {
+  background: linear-gradient(to left, rgba(153, 255, 153, 0.4), rgba(153, 51, 255, 0.2)); }
+
+.bg-rgba-gradient-light-green {
+  background: linear-gradient(to bottom, rgba(153, 255, 153, 0.6), rgba(242, 242, 242, 0.9)); }
+
+.bg-rgba-gradient-light-yellow {
+  background: linear-gradient(to bottom, rgba(255, 255, 102, 0.6), rgba(242, 242, 242, 0.9)); }
+
+.bg-rgba-gradient-light-black {
+  background: linear-gradient(to bottom, rgba(38, 38, 38, 0.6), rgba(242, 242, 242, 0.9)); }
+
+.bg-rgba-gradient-kyoo {
+  background: linear-gradient(to bottom, rgba(221, 62, 84, 0.9), rgba(107, 229, 133, 0.9)); }
+
 /************************************* */
 /*****************HEADER************** */
 /************************************* */
@@ -59,7 +85,8 @@ header {
   padding: 10px 30px;
   text-decoration: none;
   border-radius: 30px;
-  transition: background-color 0.5s, color 0.7s, border 0.8s; }
+  transition: background-color 0.5s, color 0.7s, border 0.8s;
+  margin-bottom: 20px; }
 
 .btn-full {
   background-color: #ffffff;
@@ -104,7 +131,8 @@ header {
   opacity: 0.8;
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 0 10px rgba(136, 136, 136, 0.3); }
+  box-shadow: 0 0 10px rgba(136, 136, 136, 0.3);
+  margin-bottom: 20px; }
 
 .gradient-green {
   background: linear-gradient(to bottom, rgba(153, 255, 153, 0.6), rgba(242, 242, 242, 0.9)); }
@@ -135,5 +163,128 @@ header {
   top: 250px;
   left: 30px;
   color: #ffffff; }
+
+/************************************* */
+/*********MAIN CUSTOMER REVIEW******** */
+/************************************* */
+.customer-review {
+  background-image: linear-gradient(to bottom right, rgba(153, 255, 153, 0.5), rgba(153, 51, 255, 0.6)), url(../images/customer_review/the-paysage.jpg);
+  background-size: cover;
+  background-attachment: fixed; }
+
+.customer-review h2:after {
+  background: #ffffff; }
+
+.profil-customer {
+  padding: 5px;
+  font-style: italic;
+  line-height: 130%;
+  color: #ffffff; }
+
+blockquote:before {
+  content: "“";
+  font-size: 800%;
+  font-family: "Sanchez", serif;
+  position: relative;
+  top: 35px;
+  opacity: 0.7; }
+
+cite {
+  display: block;
+  font-size: 90%;
+  margin: 5px; }
+
+cite img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 5px; }
+
+/************************************* */
+/********MAIN SUBSCRIPTION TABLE****** */
+/************************************* */
+.pack {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+  border-radius: 10px; }
+
+.pack h3 {
+  font-weight: 500;
+  font-size: 200%; }
+
+.pack h4 {
+  font-size: 200%; }
+
+.pack span {
+  font-weight: 200;
+  font-size: 50%;
+  position: relative;
+  top: -10px;
+  left: 2px; }
+
+.pack-title {
+  padding: 10px 10px 0 10px;
+  border-bottom: 2px solid #3c3c3c;
+  text-align: center; }
+
+.pack-content {
+  padding: 10px; }
+
+.pack-content ul li svg {
+  font-size: 90%;
+  margin-right: 5px; }
+
+.pack-signup {
+  text-align: center; }
+
+.btn-pack {
+  background-color: #3c3c3c;
+  color: #ffffff;
+  margin-bottom: 10px; }
+
+.btn-prenium {
+  background-color: #ffffff;
+  margin-bottom: 10px; }
+
+.btn-prenium:hover {
+  background: linear-gradient(to bottom right, rgba(153, 255, 153, 0.5), rgba(153, 51, 255, 0.6));
+  border: 1px solid #ffffff;
+  color: #ffffff; }
+
+.btn-pack:hover {
+  background-color: #888888;
+  color: #ffffff; }
+
+/************************************* */
+/***********MAIN CONTACT & MAP******** */
+/************************************* */
+.contact-form {
+  margin-bottom: 20px;
+  width: 100%; }
+
+.input-form {
+  width: 100%; }
+
+.map {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden; }
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+/************************************* */
+/*****************FOOTER************** */
+/************************************* */
+footer {
+  background-color: #3c3c3c;
+  color: #ffffff;
+  height: 50px;
+  padding: 20px;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
